@@ -5,6 +5,7 @@ const controller = require('../controllers');
 
 router.get('/', controller.getHomePage);
 router.get('/data', controller.fetchData);
+router.get('/search', controller.fetchResults);
 
 router.get('/public/infoPage/', controller.getInfoPage.html);
 router.get('/public/infoPage/index.css', controller.getInfoPage.css);

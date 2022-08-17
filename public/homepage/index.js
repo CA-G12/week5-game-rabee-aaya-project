@@ -23,6 +23,7 @@ const createElement = (type, options, children) => {
 
 const createOneGame = (data) => {
   console.log(data.results);
+  games.textContent = '';
 
   const gamesData = data.results;
 
@@ -40,9 +41,7 @@ const createOneGame = (data) => {
 fetch('/data').then((response) => response.json())
   .then((data) => createOneGame(data));
 
-searchInput.addEventListener('keyup', (e) =>{
-  let searchgame = new URLSearchParams({
-    gameName: 'call',
-  });
-  fetch('search/call').then(console.log);
+searchInput.addEventListener('keyup', () => {
+  fetch(`/search?keyword=${searchInput.value}`).then((response) => response.json())
+    .then((data) => createOneGame(data));
 });
