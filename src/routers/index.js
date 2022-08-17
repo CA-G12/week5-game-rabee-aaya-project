@@ -1,7 +1,8 @@
 const router = require('express').Router();
 
-const { getHomePage } = require('../controllers');
+const { getHomePage, fetchData } = require('../controllers');
 
-router.get('/', getHomePage);
+router.get('/d', getHomePage);
+router.get('/data', fetchData);
 
 module.exports = router;
