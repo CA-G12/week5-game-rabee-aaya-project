@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+  }
+
+  
+:root{
+    --Eerie-Black: #1B1626;
+    --Yankees-Blue: #2A2640;
+    --Royal-Orange: #F29544;
+}
+
+body{
+    background-color: var(--Eerie-Black);
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px auto;
+    padding-top: 1rem;
+    height: 30vh;
+  }
+
+  .search i {
+    padding-top: 1rem;
+    position: absolute;
+    z-index: 2;
+    left: 27%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var( --Royal-Orange);
+  }
+
+
+.search input {
+    border: 2px solid;
+    background-color: #272035ad;
+    border: 1px solid #272035ad;
+    padding: 0.5rem 4rem;
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    text-decoration: none;
+    height: 3rem;
+    font-size: larger;
+    border-radius: 20px;
+    color:  var( --Royal-Orange);
+
+  }
+  
+  .search input::placeholder {
+    color: var( --Royal-Orange);
+  }
+
+  input:focus {
+    outline: none;
+    border-color:  var( --Royal-Orange);
+  }
+
+
+
+
+.games{
+    width: 100%;
+    padding: 2rem 7rem;
+    background-color:var(--Yankees-Blue) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ .one-game{
+    width: 20rem;
+    border-radius: 20px;
+    background-color: var(--Eerie-Black);
+    margin:  1rem;
+}
+.one-game img{
+    height: 12rem;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.name{
+    text-align: center;
+    padding: 1rem;
+    color:var( --Royal-Orange);
+    cursor: pointer;
+}
+
+
