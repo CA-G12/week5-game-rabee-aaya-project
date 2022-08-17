@@ -1,5 +1,6 @@
-/* eslint-disable linebreak-style */
-const { getHomePage, fetchData } = require('./homepage');
+const { getHomePage, fetchData, fetchResults } = require('./homepage');
 const getInfoPage = require('./infoPage');
 
-module.exports = { getHomePage, fetchData, getInfoPage };
+module.exports = {
+  getHomePage, fetchData, getInfoPage, fetchResults,
+};

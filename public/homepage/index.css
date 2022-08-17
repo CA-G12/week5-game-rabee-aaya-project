@@ -81,6 +81,9 @@ body{
     background-color: var(--Eerie-Black);
     margin:  1rem;
 }
+
+
+
 .one-game img{
     height: 12rem;
     width: 100%;
@@ -95,3 +98,11 @@ body{
 }
 
 
+.one-game:hover{
+  background-color: var(--Royal-Orange);
+  color: var(--Eerie-Black);
+}
+
+ .one-game:hover .name{
+  color: var(--Eerie-Black);
+}
