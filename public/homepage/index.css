@@ -14,6 +14,7 @@
 
 body{
     background-color: var(--Eerie-Black);
+
 }
 
 .search {
@@ -69,14 +70,19 @@ body{
     width: 100%;
     padding: 2rem 7rem;
     background-color:var(--Yankees-Blue) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
  }
 
  .one-game{
     width: 20rem;
     border-radius: 20px;
     background-color: var(--Eerie-Black);
+    margin:  1rem;
 }
 .one-game img{
+    height: 12rem;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
