@@ -7,7 +7,6 @@ const fetchData = (req, res) => {
     .then((data) => res.send((data))).catch(console.log);
 };
 const fetchResults = (req, res) => {
-  console.log(req.url);
   const url = 'https://api.rawg.io/api/games?key=e735fb7f64764085aed20235ec7455f9';
   fetch(url).then((response) => response.json())
     .then((data) => res.send((data))).catch(console.log);

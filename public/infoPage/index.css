@@ -1,0 +1,88 @@
+:root{
+    --Eerie-Black: #1B1626;
+    --Yankees-Blue: #2A2640;
+    --Royal-Orange: #F29544;
+    --white : #FFF;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: var(--white);
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Eerie-Black);
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: var(--Yankees-Blue);
+}
+main{
+    padding: 45px;
+}
+h3{
+    color: var(--Royal-Orange);
+    width: 125px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--Royal-Orange);
+    margin-bottom: 16px;
+}
+.header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.website-logo{
+    margin-left: 16px;
+}
+.home-link{
+    color: var(--Royal-Orange);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.nav-options{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 8px;
+}
+.nav-option{
+    color: var(--Royal-Orange);
+    margin-right: 8px;
+    position: relative;
+    padding-bottom: 5px;
+    cursor: default;
+}
+.nav-option:hover::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    border-bottom: 2px solid var(--Royal-Orange);
+  }
+.title{
+    width: 100%;
+    text-align: center;
+    color: var(--Royal-Orange);
+    margin-bottom: 5%;
+}
+.pohto-gallery{
+    width: 100%;
+    height: 30%;
+    overflow-x: scroll;
+}
+.pohto{
+    width: 30%;
+    height: 100%;
+    margin: 16px;
+}
