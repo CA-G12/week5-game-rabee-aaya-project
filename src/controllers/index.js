@@ -1,3 +1,3 @@
-const { getHomePage, fetchData } = require('./homepage');
+const { getHomePage, fetchData, fetchResults } = require('./homepage');
 
-module.exports = { getHomePage, fetchData };
+module.exports = { getHomePage, fetchData, fetchResults };
