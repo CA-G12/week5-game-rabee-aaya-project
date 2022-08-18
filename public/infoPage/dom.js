@@ -14,7 +14,6 @@ const createScreenShots = (screenShotURL) => {
 
 getData(game.gameID).then((data) => {
   gameTitle.innerText = data.name;
-  // header.style.backgroundImage = `url(${data.background_image})`;
   itemDescription.innerText = data.description_raw;
   game.screenShots.forEach((element) => {
     createScreenShots(element.image);
