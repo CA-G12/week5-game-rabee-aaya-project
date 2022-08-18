@@ -1,6 +1,9 @@
 const games = document.querySelector('.games');
 const searchInput = document.querySelector('.search-input');
 
+games.textContent = "Loading games..";
+
+
 const createElement = (type, options, children) => {
   const element = document.createElement(type);
   element.className = options.class;
@@ -19,6 +22,7 @@ const createElement = (type, options, children) => {
 
 const createOneGame = (data) => {
   games.textContent = '';
+  
 
   const gamesData = data.results;
 
