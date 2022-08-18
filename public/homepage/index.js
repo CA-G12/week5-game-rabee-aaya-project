@@ -3,7 +3,6 @@ const searchInput = document.querySelector('.search-input');
 
 games.textContent = "Loading games..";
 
-
 const createElement = (type, options, children) => {
   const element = document.createElement(type);
   element.className = options.class;
