@@ -73,6 +73,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color:var(--Royal-Orange);
  }
 
  .one-game{
@@ -106,3 +107,4 @@ body{
  .one-game:hover .name{
   color: var(--Eerie-Black);
 }
+
