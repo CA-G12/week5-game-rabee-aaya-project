@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const games = document.querySelector('.games');
 const searchInput = document.querySelector('.search-input');
 
@@ -23,7 +24,7 @@ const createOneGame = (data) => {
   const gamesData = data.results;
 
   gamesData.forEach((game) => {
-    const nameh3 = createElement('h3', { class: '' }, game.name);
+    const nameh3 = createElement('a', { class: '' }, game.name);
     const gameName = createElement('div', { class: 'name' }, [nameh3]);
     const gameImg = createElement('img', { class: 'img', src: game.background_image }, null);
     const oneGame = createElement('div', { class: 'one-game' }, [gameImg, gameName]);
@@ -31,9 +32,9 @@ const createOneGame = (data) => {
 
     oneGame.addEventListener('click', () => {
       const gameID = game.id;
-      const screenShots = game['short_screenshots'];
+      const screenShots = game.short_screenshots;
       localStorage.setItem('game', JSON.stringify({ gameID, screenShots }));
-    //  fetch(`/public/infoPage/index.html/gameID/${game.id}`).then((response) => response.json()).then((data) => console.log(data));
+      nameh3.href = '/public/infoPage/';
     });
   });
 };
