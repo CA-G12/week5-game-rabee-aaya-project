@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const getData = fetch('/public/infoPage/index.html/gameID/3328', {
+const getData = (gameID) => fetch(`/public/infoPage/index.html/gameID/${gameID}`, {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json',
