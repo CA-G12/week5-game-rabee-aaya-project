@@ -33,6 +33,7 @@ const createOneGame = (data) => {
       const gameID = game.id;
       const screenShots = game['short_screenshots'];
       localStorage.setItem('game', JSON.stringify({ gameID, screenShots }));
+    //  fetch(`/public/infoPage/index.html/gameID/${game.id}`).then((response) => response.json()).then((data) => console.log(data));
     });
   });
 };
